@@ -1,0 +1,3 @@
+* general
+Branches `chen` and `bob` has edit conflict on hello.txt and bye.txt.
+They are not merged to `main` branch yet.
