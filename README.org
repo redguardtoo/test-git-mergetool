@@ -1,3 +1,11 @@
-* general
-Branches `chen` and `bob` has edit conflict on hello.txt and bye.txt.
-They are not merged to `main` branch yet.
+* General
+Branches =chen= and =bob= has edit conflict on =hello.txt= and =bye.txt=.
+They are not merged to =main= branch yet.
+
+* Instructions to call your mergetool
+1. Clone this repository and enter the folder
+1. Type =git branch -a= to see all branches including remotes
+1. Type =git pull origin bob=.
+1. Type =git pull origin chen=. This will already cause =CONFLICT (content): Merge conflict in hello.txt=.
+1. Make sure your mergetool is configured, e.g. in =~/.gitconfig=.
+1. Type =git mergetool= to test your setup.
