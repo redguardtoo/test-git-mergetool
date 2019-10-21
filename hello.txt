@@ -1,7 +1,7 @@
 hello
 hello
 hello
-- this is from the vip master.
+- this is from the vip chen.
 hello
 hello
 hello
@@ -14,6 +14,7 @@ hello
 hello
 hello
 hello
+- a line from chen
 hello
 hello
 hello
@@ -23,7 +24,7 @@ hello
 hello
 hello
 hello
-hello
+- a line from chen
 hello
 hello
 hello
