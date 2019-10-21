@@ -1,7 +1,17 @@
 hello
 hello
 hello
-- this is from the vip master.
+- this is from the vip bob.
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+hello
+- a line from bob
 hello
 hello
 hello
@@ -12,16 +22,7 @@ hello
 hello
 hello
 hello
-hello
-hello
-hello
-hello
-hello
-hello
-hello
-hello
-hello
-hello
+- a line from bob
 hello
 hello
 hello
