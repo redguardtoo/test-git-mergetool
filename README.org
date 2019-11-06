@@ -1,11 +1,22 @@
 * General
 Branches =chen= and =bob= has edit conflict on =hello.txt= and =bye.txt=.
-They are not merged to =main= branch yet.
 
-* Instructions to call your mergetool
-1. Clone this repository and enter the folder
-1. Type =git branch -a= to see all branches including remotes
-1. Type =git pull origin bob=.
-1. Type =git pull origin chen=. This will already cause =CONFLICT (content): Merge conflict in hello.txt=.
-1. Make sure your mergetool is configured, e.g. in =~/.gitconfig=.
-1. Type =git mergetool= to test your setup.
+They are not merged to =master= branch yet.
+
+Branch =indent-only= only change white spaces of certain line.
+
+* Instructions
+** Prepare to call your mergetool
+- Clone this repository and enter the folder
+- Type =git fetch --all && git branch -a= to see all branches including remotes
+** Create conflicts by merge both Bob and Chen's code
+- Go to =master= branch and make sure it's in original status
+- Type =git merge origin/bob && git merge origin/chen=. This will cause conflicts.
+- Make sure your mergetool is configured, e.g. in =~/.gitconfig=.
+- Type =git mergetool= to test your setup.
+** Resolve conflicts but ignore all white spaces when comparing lines
+- Go to =master= branch and make sure it's in original status
+- Type =git merge origin/indent-only && git merge origin/chen=. This will cause conflicts.
+- Make sure your mergetool is configured, e.g. in =~/.gitconfig=.
+- Type =git mergetool= to test your setup.
+- Go back to the first step. This time try run =git merge -Xignore-all-space= instead
